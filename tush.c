@@ -30,10 +30,12 @@ if (p == 0)
             if (l == 0 , m == 0)
             {
             	printf("logged in sucessfully");
+            	system("pause");
             }     
             else
             {
             	printf("wrong password");
+            	system("pause");
             }
 	}
 
