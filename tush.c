@@ -4,7 +4,7 @@
 
 int main()
 {
-	int p,l,m;
+	int p,l,m,o;
 	char check[4], name[20], pass[20], regc[9] = "register", y[4] = "yes", yc[4] , ycc[20], pc[20];
 	printf("want to register or login");
 	scanf("%s", &check);
@@ -17,7 +17,9 @@ if (p == 0)
 	scanf("%s", &pass);
 	printf("registration sucessfull want to login");
 	scanf("%s", &yc);
-	if (yc == 0) 
+	o = strcmp(yc, y);
+
+	if (o == 0) 
 	{
             printf("enter username");
             scanf("%s", &ycc);
